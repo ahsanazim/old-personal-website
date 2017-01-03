@@ -1,0 +1,420 @@
+/*   Credits:
+   - making the main heading (i.e. "Ahsan Azim") full screen adapted from:
+   http://stackoverflow.com/questions/1719452/how-to-make-a-div-always-full-screen
+   - figuring out how to make font scale with width:
+   http://stackoverflow.com/questions/16056591/font-scaling-based-on-width-of-container
+*/
+
+html, body {
+  background-color: white;
+  height: 100%;
+  margin: 0;
+}
+
+.section {
+  margin:0px;
+  height: 100%;
+  width:100%;
+}
+
+.main_heading {
+  text-align: center;
+  min-height: 100%;
+  background-color: white;
+  color: #18121E;
+  font-variant: normal;
+  font-family: 'Source Code Pro';
+  font-weight: 80;
+  font-size: 15em;
+  font-size: 18vw;
+  margin: 0px;
+  border-top-style: solid;
+  border-top-width: medium;
+  border-top-color: white;
+  padding: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 50px;
+  max-width: 100%;
+  max-height: 100%;
+}
+p {
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5em;
+  margin-left: 20px;
+  margin-right:7px;
+  width: 65%;
+}
+
+#contact {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+
+#contact_info {
+  margin-top: 50px;
+}
+
+#footer_div {
+  background-color: white;
+  width: 100%;
+  padding-top: 0.7px;
+  padding-bottom: 0.7px;
+}
+#footer {
+  font-family: 'Roboto', sans-serif;
+  background-color: white;
+  line-height: 1em;
+  text-align: center;
+  font-size: 1.0em;
+  color: black;
+  width: 100%;
+  padding: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+#text_info {
+  clear: left;
+  padding: 3px;
+  margin-left: 30px;
+}
+#academic_interests_list {
+  padding: 4px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5em;
+  overflow: hidden;
+  list-style-position:inside;
+}
+.blue {
+  color: #00CCFF;
+}
+.sub_headings {
+  font-family: "HelveticaNeue-Light","Helvetica","Lucida Grande", "Arial", sans-serif;
+  background-color: white;
+  font-size: 2em;
+  line-height: 1.5em;
+  font-weight: lighter;
+  border-bottom-style: solid;
+  border-bottom-color: lightslategrey;
+  border-bottom-width: thin;
+  padding: 7px;
+  margin-left: 7px;
+  padding-left: 30px;
+  clear: left;
+  color: black;
+}
+.text_style {
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5em;
+}
+
+.bio_sec {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  padding-bottom: 20px;
+}
+
+.personal_img_container {
+  width: 100%;
+  height: auto;
+  margin-left: 30px;
+}
+.personal_img_container img {
+  width: 100%;
+  height: auto;
+  margin-left:5px;
+  margin-top:10px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  padding-bottom: 10px;
+}
+.personal_img_small_container {
+  height:44px;
+  width: auto;
+}
+.personal_img_small_container img {
+  height:100%;
+  width: auto;
+}
+
+#personal_pic {
+  height: 350px;
+  width: auto;
+  margin-left: 30px;
+}
+
+.bio_text {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  width: 700px;
+}
+
+#bio {
+  width: 100%;
+  color: black;
+}
+
+/* navigation bar technique:
+  http://www.w3schools.com/css/css_navbar.asp
+*/
+#nav_bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #18121E;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-bottom-color: black;
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+  transition: background-color 0.5s;
+}
+
+.nav_bar_items {
+  font-family: 'Roboto', sans-serif;
+  float: left;
+  font-variant: normal;
+}
+.nav_bar_items a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  padding-bottom: 10px;
+  text-decoration: none;
+}
+
+
+/* Change the link color to black on hover */
+.nav_bar_items a:hover {
+  box-shadow: 0 10px 6px -2px gray;
+}
+
+#home {
+  min-width: 100%;
+}
+
+i {
+  color: white;
+}
+
+#about {
+  font-size: 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+#cs_info {
+  font-size: 25px;
+  line-height: 2em;
+  color: black;
+}
+
+#future_plans {
+  font-size: 25px;
+  line-height: 2em;
+}
+
+#contact_info {
+  font-size: 25px;
+  line-height: 2em;
+}
+
+#this_website {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+#contact_info {
+  padding-top: 180px;
+  padding-left: 75px;
+  padding-right: 75px;
+  display: flex;
+  flex-direction: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#contact_info a i {
+  color: black;
+  font-size: 95px;
+}
+
+/* pop-up menu visible on clicking "Menu" button in mobile version of page */
+.menu_screen {
+  opacity: 0;
+  height: 0px;
+  width: 0px;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  top: -195px;
+  left: 0px;
+  background-color: black;
+  display: flex;
+  position: fixed;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  font-family: "HelveticaNeue-Light","Helvetica","Lucida Grande", "Arial", sans-serif;
+  z-index: 999;
+}
+
+/* opposite of deprecated class (refer below)
+  "deprecate" class attatched to anything that shouldn't be visible in
+   full screen version
+*/
+.dep_opposite {
+  display: none;
+}
+
+/* needs to take up zero space */
+#toggle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+
+/* ========================================================================== */
+/*                MOBILE FRIENDLY VERSION OF PAGE
+  obtained at sub-640px screen size
+*/
+
+@media only screen and (max-width: 640px) and (-webkit-min-device-pixel-ratio: 2) {
+
+  .section {
+    height: 100vh;
+  }
+
+  .menu_screen {
+    transition: all 0.4s ease;
+  }
+
+  /* absence of these was causing problems in transitions
+   code will be refactored to make it more sensible and avoid reuse
+   */
+  .menu_screen #ms_rest li a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .menu_screen #ms_rest {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 120px;
+    height: 90vh;
+  }
+  /* end ^^ */
+
+  /* make visible */
+  .dep_opposite {
+    display: block;
+  }
+
+  /* not visible in mobile */
+  .deprecate {
+      display: none;
+  }
+
+  .blinking {
+    display: none !important;
+  }
+
+  label {
+    position: relative;
+    display: block;
+    font: inherit;
+    color: white;
+  }
+
+
+
+  /* WHEN MENU BUTTON CLICKED: -------                                        */
+
+  /* referred to following link for help in making the pop-up menu cover
+     entire page:
+    http://stackoverflow.com/questions/3250790/making-a-div-that-covers-the-entire-page
+  */
+  #toggle:checked ~ .menu_screen {
+    width:100%;
+    height:100%;
+    background-color: black;
+    opacity: 1;
+    top:0px;
+    left: 0px;
+    transition: all 0.5s ease;
+    font-family: "HelveticaNeue-Light","Helvetica","Lucida Grande", "Arial", sans-serif;
+  }
+
+  #toggle:checked ~ .menu_screen #ms_top {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    list-style-type: none;
+    align-items: baseline;
+    padding: 10px;
+  }
+
+  #toggle:checked ~ .menu_screen #ms_top li {
+    font-weight: bold;
+    font-size: 30px;
+    width: 50% !important;
+    color: white;
+  }
+
+  #toggle:checked ~ .menu_screen #ms_top #ms_x {
+    align-self: baseline;
+    margin-left: auto;
+    text-align: right;
+    margin-right: 20px;
+  }
+
+  #toggle:checked ~ .menu_screen #ms_top #ms_logo {
+    color: white;
+  }
+
+  #toggle:checked ~ .menu_screen #ms_top #ms_logo:hover {
+    color: white;
+  }
+
+  #toggle:checked ~ .menu_screen #ms_rest {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 120px;
+    height: 90vh;
+  }
+
+  #toggle:checked ~ .menu_screen #ms_rest li a {
+    text-decoration: none;
+    color: white;
+  }
+
+  #toggle:checked ~ .menu_screen #ms_top li:hover {
+    background-color: transparent !important;
+  }
+
+  #toggle:checked ~ .menu_screen #ms_rest li:hover {
+    box-shadow: 10px 7px;
+    background-color: transparent !important;
+  }
+
+}

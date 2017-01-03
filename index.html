@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ahsanazim.me</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type = "text/javascript" src = "http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <div id="home_proxy"></div>
+    <ul id="nav_bar">
+      <li class="nav_bar_items deprecate" id="nav_home"><a href=#home>home</a></li>
+      <li class="nav_bar_items deprecate" id="nav_about"><a href=#about>about</a></li>
+      <li class="nav_bar_items deprecate" id="nav_this_website"><a href=#this_website>this website</a></li>
+      <li class="nav_bar_items deprecate" id="nav_contact"><a href=#contact>contact</a></li>
+      <li class="nav_bar_items deprecate" id="github"><a href="https://github.com/ahsanazim"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+      <li class="nav_bar_items deprecate" id="linkedin"><a href="https://www.linkedin.com/in/ahsanazim1"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+      <input type="checkbox" id="toggle">
+      <li class="nav_bar_items" style="float:right">
+        <div class="personal_img_small_container deprecate">
+          <img id="personal_pic_small" src="https://raw.githubusercontent.com/ahsanazim/ahsanazim.me/gh-pages/imgs/official_photo.jpg">
+        </div>
+        <div class="mobile_menu_button dep_opposite">
+          <label class="dep_opposite" for="toggle">Menu</label>
+        </div>
+      </li>
+      <div class="menu_screen">
+        <ul id="ms_top">
+          <li id="ms_logo">ahsan azim</li>
+          <li id="ms_x"><label for="toggle">x</label></li>
+        </ul>
+        <ul id="ms_rest">
+          <li><a href=#home>home</a></li>
+          <li><a href=#about>about</a></li>
+          <li><a href=#this_website>this website</a></li>
+          <li><a href=#contact>contact</a></li>
+        </ul>
+      </div>
+    </ul>
+    <div class="main_heading" id="home"></div>
+    <div class="section" id="about">
+      <div class="bio_sec">
+        <img id="personal_pic" src="https://raw.githubusercontent.com/ahsanazim/ahsanazim.me/gh-pages/imgs/self_pic.jpg">
+        <div class="bio_text">
+          <p id="bio">My name is Ahsan Azim!<br><br>I'm from Lahore (Pakistan), although
+            my family's moved around quite a bit - I've lived variously in New York,
+            the Netherlands, and Italy.<br><br> I'm currently an undergrad at Dartmouth
+            College in Hanover, New Hampshire. I'm studying Computer Science, Math,
+            and Government, and plan for a career in tech!<br><br>
+            More specifically, I'm interested in Web development, cross-platform app
+            development, data analysis, as well as pure mathematics and comparative
+            politics.</p>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="this_website">
+      <div id="text_info">
+        <p id="cs_info">This website itself is rather curious - I decided
+         to eschew using any of the in-vogue third-party libraries, and stuck to
+         good old jquery for animating things.
+         Indeed, despite personally swearing by the excellent React.js library,
+         jquery was fun and fast to use for something of this scale, and I enjoyed the process.
+         </p>
+        <p id="future_plans"> If you're curious, the code is housed
+          <a target="_blank" class="blue" href="https://github.com/ahsanazim/ahsanazim.me">here</a>
+          on github.
+        </p>
+      </div>
+    </div>
+    <div class="section" id="contact">
+      <div id="contact_info">
+          <a href="https://github.com/ahsanazim"><i class="fa fa-github" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/ahsanazim1"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          <a href="mailto:ahsan.azim.18@dartmouth.edu"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+      </div>
+      <div id="footer_div">
+        <p id="footer">
+          &copy; Ahsan Azim, 2016
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
